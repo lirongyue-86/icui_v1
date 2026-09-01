@@ -1,0 +1,182 @@
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #163956;
+  background: #fff;
+  font-synthesis: none;
+  --content-width: 68rem;
+  --side-space: clamp(1.75rem, 10vw, 12rem);
+}
+
+* { box-sizing: border-box; }
+
+body { margin: 0; min-width: 320px; }
+
+a { color: inherit; }
+
+.announcement-shell {
+  position: relative;
+  isolation: isolate;
+  padding: clamp(1rem, 2.25vw, 1.75rem) 1.25rem clamp(2rem, 4vw, 3.5rem);
+  display: grid;
+  place-items: center;
+  background: #fff;
+}
+
+.partner-bar {
+  min-height: clamp(6.25rem, 8.5vw, 8.75rem);
+  display: grid;
+  align-items: center;
+  border-bottom: 1px solid #edf1f2;
+  background: #fff;
+}
+
+.partner-links {
+  width: min(calc(100% - 2.5rem), 100rem);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(1.25rem, 3vw, 3.8rem);
+}
+
+.partner-links a {
+  display: grid;
+  place-items: center;
+  flex: 0 1 auto;
+  border-radius: .25rem;
+}
+
+.partner-links a:focus-visible {
+  outline: 3px solid #62beb7;
+  outline-offset: .25rem;
+}
+
+.partner-links img {
+  display: block;
+  width: auto;
+  height: clamp(3.5rem, 5.2vw, 4.9rem);
+  max-width: min(28vw, 25rem);
+  object-fit: contain;
+}
+
+.partner-links .scri-logo { max-width: min(31vw, 27rem); }
+.partner-links .conference-mark {
+  height: clamp(3.6rem, 5.2vw, 4.9rem);
+  max-width: 5.1rem;
+  margin-left: clamp(-.4rem, -.7vw, -.2rem);
+}
+
+.welcome-intro {
+  width: min(calc(100% - 2 * var(--side-space)), var(--content-width));
+  margin: clamp(2.5rem, 5vw, 5rem) auto .65rem;
+  color: #163956;
+  text-align: justify;
+  text-align-last: left;
+}
+
+.welcome-intro p {
+  max-width: 64rem;
+  margin: 0;
+  font-size: clamp(1rem, 1.25vw, 1.13rem);
+  line-height: 1.9;
+  letter-spacing: .005em;
+}
+
+.welcome-intro .salutation {
+  margin-bottom: 1rem;
+  color: #1b6075;
+  font-weight: 700;
+  text-align: left;
+}
+
+.welcome-stage {
+  width: 100%;
+  background: linear-gradient(180deg, #58afe3 0%, #9ddcf1 52%, #48afd4 73%, #17388f 100%);
+}
+
+.welcome-image-frame {
+  width: min(calc(100% - 2 * var(--side-space)), var(--content-width));
+  aspect-ratio: 2.35 / 1;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.welcome-image-frame img {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: auto;
+  min-width: 100%;
+  max-width: none;
+  height: 100%;
+  object-fit: cover;
+  transform: translateX(-50%);
+}
+
+.announcement-content {
+  width: min(calc(100% - 2 * var(--side-space)), var(--content-width));
+}
+
+strong { color: #124f78; }
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  margin: 0;
+  border-top: 1px solid #d9ebed;
+  border-bottom: 1px solid #d9ebed;
+}
+
+.detail-group { padding: 1.75rem clamp(1.35rem, 3vw, 2.35rem) 1.9rem; }
+.detail-group + .detail-group { border-left: 1px solid #d9ebed; }
+
+h2 {
+  margin: 0 0 1rem;
+  color: #176678;
+  font-size: 1.08rem;
+  letter-spacing: .02em;
+}
+
+ul { margin: 0; padding: 0; list-style: none; }
+li {
+  position: relative;
+  padding-left: 1.05rem;
+  font-size: .93rem;
+  line-height: 1.65;
+}
+li + li { margin-top: .45rem; }
+li::before { content: "·"; position: absolute; left: 0; color: #27a4ad; font-size: 1.3rem; line-height: 1.15; }
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem 3rem;
+  align-items: center;
+  padding: 1.25rem var(--side-space);
+  background: linear-gradient(90deg, #277fbd, #1b67ab);
+  color: white;
+  font-size: clamp(.86rem, 1.15vw, 1rem);
+  font-weight: 650;
+}
+
+.contact p { margin: 0; }
+.contact a { text-decoration: none; }
+.contact a:hover { text-decoration: underline; text-underline-offset: .22rem; }
+
+@media (max-width: 640px) {
+  :root { --side-space: 1rem; }
+  .partner-bar { min-height: 5.25rem; }
+  .partner-links { width: calc(100% - 1.5rem); gap: .75rem; justify-content: space-between; }
+  .partner-links img { height: 2.35rem; max-width: 25vw; }
+  .partner-links .scri-logo { max-width: 30vw; }
+  .partner-links .conference-mark { height: 2.85rem; max-width: 3rem; margin-left: -.35rem; }
+  .welcome-intro { margin-top: 2rem; text-align: left; text-align-last: auto; }
+  .welcome-stage { padding: 0; }
+  .announcement-shell { padding: 2.5rem 1rem 0; }
+  .detail-grid { grid-template-columns: 1fr; }
+  .detail-group + .detail-group { border-left: 0; border-top: 1px solid #d9ebed; }
+  .contact { grid-template-columns: 1fr; gap: .5rem; }
+}
