@@ -170,7 +170,7 @@ const conferenceChair = {
 
     <section class="welcome-stage" aria-label="GSCS and ICUI 2027 welcome">
       <div class="welcome-image-frame">
-        <img src="/英文版-香港调整-规整建筑-香港中环间距版.png" alt="Global Smart Cities Summit cum the International Conference on Urban Informatics 2027" />
+        <img src="/英文版-香港调整-规整建筑-会展浅波浪遮挡版.png" alt="Global Smart Cities Summit cum the International Conference on Urban Informatics 2027" />
       </div>
     </section>
 
