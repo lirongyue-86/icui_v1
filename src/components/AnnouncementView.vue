@@ -170,14 +170,14 @@ const conferenceChair = {
 
     <section class="welcome-stage" aria-label="GSCS and ICUI 2027 welcome">
       <div class="welcome-image-frame">
-        <img src="/英文版-香港调整-规整建筑-用户确认版.png" alt="Global Smart Cities Summit cum the International Conference on Urban Informatics 2027" />
+        <img src="/英文版-香港调整-规整建筑-第5届版.png" alt="Global Smart Cities Summit cum the International Conference on Urban Informatics 2027" />
       </div>
     </section>
 
     <section class="welcome-intro" aria-label="Welcome announcement">
       <p class="salutation">Dear colleagues and friends,</p>
       <p>
-        We are delighted to announce that the <strong>Global Smart Cities Summit cum the 6th International Conference on Urban Informatics (GSCS &amp; ICUI 2027)</strong> will be held in Hong Kong from 20 to 23 July 2027. GSCS &amp; ICUI 2027 will bring together leading researchers, practitioners, industry experts, and policymakers from around the globe to exchange innovative ideas and share the latest advancements in smart city development and urban informatics.
+        We are delighted to announce that the <strong>Global Smart Cities Summit cum the 5th International Conference on Urban Informatics (GSCS &amp; ICUI 2027)</strong> will be held in Hong Kong from 20 to 23 July 2027. GSCS &amp; ICUI 2027 will bring together leading researchers, practitioners, industry experts, and policymakers from around the globe to exchange innovative ideas and share the latest advancements in smart city development and urban informatics.
       </p>
     </section>
 
